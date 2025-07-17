@@ -23,6 +23,33 @@ The `agent.py` file in each version's directory defines the agent. The `v0` agen
 
 ## Getting Started
 
-To run the agents, you will need to have the Google Generative AI ADK installed. You can then execute the `agent.py` file in either the `story_teller_v0` or `story_teller_v1` directory to start the story generation process.
+To run the agents, you will need to have the Google Generative AI ADK installed. It is recommended to use a virtual environment to manage dependencies.
+
+### Setup
+
+1.  **Create and activate a virtual environment:**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\\Scripts\\activate`
+    ```
+
+2.  **Install the dependencies for the desired version:**
+
+    For `v0`:
+
+    ```bash
+    pip install -r story_teller_v0/requirements.txt
+    ```
+
+    For `v1`:
+
+    ```bash
+    pip install -r story_teller_v1/requirements.txt
+    ```
+
+### Running the Agent
+
+You can then execute the `agent.py` file in either the `story_teller_v0` or `story_teller_v1` directory to start the story generation process.
 
 **Note:** This project is an example of how to use the Google Generative AI ADK and may require further development to be used in a a production environment.
