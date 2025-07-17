@@ -1,10 +1,13 @@
-# ADK Story Writer
+# ADK Story Writer Tutorial
 
-This repository contains a story-writing agent that uses the Google Generative AI ADK (Agent Development Kit) to generate stories based on user input.
+This repository contains a story-writing agent that uses the Google Generative AI ADK (Agent Development Kit) to generate stories based on user input. This project is presented as a tutorial to demonstrate the capabilities of the ADK.
 
 ## Project Overview
 
-The project consists of a single agent, the "StorySkeletonAgent," which is designed to create a compelling story skeleton. The agent takes a user-provided topic and generates a story with a title, key plot points, and character sketches. The story is written in French and is structured into six chapters.
+The project consists of two versions of a story-writing agent:
+
+*   **v0:** A simplified version of the agent.
+*   **v1:** A more advanced version of the agent that creates a structured story skeleton.
 
 ## Features
 
@@ -16,14 +19,10 @@ The project consists of a single agent, the "StorySkeletonAgent," which is desig
 
 ## How it Works
 
-The `agent.py` file defines the `StorySkeletonAgent`. This agent is a `SequentialAgent` that performs the following steps:
-
-1.  **Receives a Topic:** The agent takes a topic from the user as input.
-2.  **Generates a Story Skeleton:** It uses the Gemini 2.0 Flash model to generate a story skeleton, including a title, plot points, and character sketches.
-3.  **Saves the Story:** The generated story is saved to a `story.txt` file.
+The `agent.py` file in each version's directory defines the agent. The `v0` agent is a simple agent, while the `v1` agent is a `SequentialAgent` that performs multiple steps to create a story.
 
 ## Getting Started
 
-To run the agent, you will need to have the Google Generative AI ADK installed. You can then execute the `agent.py` file to start the story generation process.
+To run the agents, you will need to have the Google Generative AI ADK installed. You can then execute the `agent.py` file in either the `story_teller_v0` or `story_teller_v1` directory to start the story generation process.
 
-**Note:** This project is an example of how to use the Google Generative AI ADK and may require further development to be used in a production environment.
+**Note:** This project is an example of how to use the Google Generative AI ADK and may require further development to be used in a a production environment.
