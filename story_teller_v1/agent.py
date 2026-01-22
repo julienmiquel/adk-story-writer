@@ -24,12 +24,13 @@ def _save_story_part(
 
     for idx, part in enumerate(llm_response.content.parts):
         try:
+            text = part.text
             filename = f"./story-{callback_context.agent_name}-{idx}.txt"
             print(f"Save story: {filename}")
-            print(f"Save part: {part.text}")
+            print(f"Save part: {text}")
 
             with open(filename, "w", encoding="utf-8") as file:
-                file.write(f"{part.text}")
+                file.write(f"{text}")
             print(f"Successfully saved text to '{filename}'")
         except FileNotFoundError:
             print(f"Error: The directory for '{filename}' does not exist.")
