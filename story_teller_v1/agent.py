@@ -30,7 +30,7 @@ def _save_story_part(
             print(f"Save part: {text}")
 
             with open(filename, "w", encoding="utf-8") as file:
-                file.write(f"{text}")
+                file.write(text)
             print(f"Successfully saved text to '{filename}'")
         except FileNotFoundError:
             print(f"Error: The directory for '{filename}' does not exist.")
