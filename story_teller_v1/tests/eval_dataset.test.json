@@ -1,0 +1,35 @@
+{
+  "eval_set_id": "story_teller_v1_evals",
+  "name": "Story Teller V1 Evals",
+  "eval_cases": [
+    {
+      "eval_id": "cat_story_v1",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "A short story"
+              }
+            ]
+          }
+        }
+      ],
+      "rubrics": [
+        {
+          "rubric_id": "r1",
+          "rubric_content": {
+            "text_property": "The story is in French."
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "1",
+        "state": {
+          "topic": "A cat who wants to go to space"
+        }
+      }
+    }
+  ]
+}
